@@ -32,13 +32,14 @@ body {
 .advice {
   width: min(90vw, 30em);
   display: grid;
-  gap: 1rem;
+  gap: 1.5rem;
   padding: 1.5rem;
   padding-bottom: 3.5rem;
   border-radius: 10px;
   background-color: var(--clr-neutral-500);
   text-align: center;
   position: relative;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .advice__id {
@@ -62,12 +63,16 @@ body {
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 50%);
-  border-radius: 50%;
-  padding: 0.75rem;
-  display: grid;
-  place-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
   border: none;
+  border-radius: 50%;
+  text-indent: -9999px;
   background-color: var(--clr-primary-500);
+  background-image: url("../images/icon-dice.svg");
+  background-repeat: no-repeat;
+  background-size: fit;
+  background-position: center;
   cursor: pointer;
 }
 
@@ -81,4 +86,8 @@ footer {
   bottom: 1rem;
   text-align: center;
   color: var(--clr-primary-400);
+}
+
+footer a {
+  color: var(--clr-primary-500);
 }
