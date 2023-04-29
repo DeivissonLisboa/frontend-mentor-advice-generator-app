@@ -22,4 +22,63 @@
 
 body {
   min-height: 100vh;
+  display: grid;
+  place-items: center;
+  position: relative;
+  font-family: var(--ff);
+  background-color: var(--clr-neutral-600);
+}
+
+.advice {
+  width: min(90vw, 30em);
+  display: grid;
+  gap: 1rem;
+  padding: 1.5rem;
+  padding-bottom: 3.5rem;
+  border-radius: 10px;
+  background-color: var(--clr-neutral-500);
+  text-align: center;
+  position: relative;
+}
+
+.advice__id {
+  color: var(--clr-primary-500);
+  font-size: 0.75rem;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+}
+
+.advice__text {
+  color: var(--clr-primary-400);
+  font-size: var(--fs);
+}
+
+.advice__divider {
+  width: 100%;
+}
+
+.advice__button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  border-radius: 50%;
+  padding: 0.75rem;
+  display: grid;
+  place-items: center;
+  border: none;
+  background-color: var(--clr-primary-500);
+  cursor: pointer;
+}
+
+.advice__button:hover {
+  box-shadow: 0 0 25px var(--clr-primary-500);
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 1rem;
+  text-align: center;
+  color: var(--clr-primary-400);
 }
